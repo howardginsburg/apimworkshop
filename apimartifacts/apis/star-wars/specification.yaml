@@ -2,9 +2,9 @@ openapi: 3.0.1
 info:
   title: Star Wars
   description: implementing star wars api
-  version: v2
+  version: ''
 servers:
-  - url: https://ginsburgapim.azure-api.net/sw/v2
+  - url: https://ginsburgapim.azure-api.net/sw
 paths:
   /people/:
     get:
