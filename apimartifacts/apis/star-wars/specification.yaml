@@ -27,24 +27,6 @@ paths:
         '200':
           description: 
 components:
-  schemas:
-    New Hope:
-      type: object
-      properties:
-        count:
-          type: integer
-        films:
-          type: array
-          items:
-            required:
-              - title
-              - release-date
-            type: object
-            properties:
-              title:
-                type: string
-              release-date:
-                type: string
   securitySchemes:
     apiKeyHeader:
       type: apiKey
