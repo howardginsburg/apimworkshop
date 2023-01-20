@@ -9,7 +9,7 @@
     "protocols": [
       "https"
     ],
-    "serviceUrl": "https://ginsburgapim.azure-api.net/demo-conference-api",
+    "serviceUrl": "https://conferenceapi.azurewebsites.net",
     "subscriptionKeyParameterNames": {
       "header": "Ocp-Apim-Subscription-Key",
       "query": "subscription-key"
