@@ -6,4 +6,4 @@ backends:
 apis:
   - name: echo-api
     properties:
-      - serviceUrl: "http://someotherurl"
+      serviceUrl: "http://someotherurl"
