@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "apiRevision": "2",
+    "apiRevisionDescription": "adding caching",
+    "apiVersion": "v2",
+    "apiVersionSetId": "/subscriptions/c5797b67-98fc-4dfa-ae5a-2e7779a26e94/resourceGroups/APIMWorkshop/providers/Microsoft.ApiManagement/service/ginsburgapim/apiVersionSets/63c03470c7c3d634fb0ebb4b",
+    "authenticationSettings": {},
+    "description": "implementing star wars api",
+    "displayName": "Star Wars",
+    "path": "sw",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://swapi.dev/api",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}
