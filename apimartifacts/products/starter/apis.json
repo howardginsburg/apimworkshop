@@ -3,15 +3,15 @@
     "name": "basic-calculator"
   },
   {
-    "name": "mark-harrison-colors-api"
-  },
-  {
     "name": "echo-api"
   },
   {
-    "name": "star-wars"
+    "name": "mark-harrison-colors-api"
   },
   {
     "name": "star-wars-v2"
+  },
+  {
+    "name": "star-wars"
   }
 ]
