@@ -1,0 +1,9 @@
+apimServiceName: prod
+namedValues:
+loggers:
+diagnostics:
+backends:
+apis:
+  - name: echo-api
+    properties:
+      - serviceUrl: "http://someotherurl"
