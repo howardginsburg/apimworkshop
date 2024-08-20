@@ -1,5 +1,6 @@
 {
   "properties": {
+    "loggerId": "/subscriptions/4400dccb-df1c-4421-91a3-d2cb708c2ee3/resourceGroups/APIMDemo/providers/Microsoft.ApiManagement/service/apimdemoginsburg/loggers/apimdemoappinsights",
     "alwaysLog": "allErrors",
     "backend": {
       "request": {
@@ -31,10 +32,9 @@
     },
     "httpCorrelationProtocol": "Legacy",
     "logClientIp": true,
-    "loggerId": "/subscriptions/4400dccb-df1c-4421-91a3-d2cb708c2ee3/resourceGroups/APIMDemo/providers/Microsoft.ApiManagement/service/apimdemoginsburgprod/loggers/apimdemoappinsights",
     "sampling": {
       "percentage": 100,
-      "samplingType": "Fixed"
+      "samplingType": "fixed"
     },
     "verbosity": "information"
   }

@@ -1,10 +1,11 @@
 {
   "properties": {
+    "path": "sw",
     "apiRevision": "1",
     "authenticationSettings": {},
     "description": "implementing star wars api",
+    "isCurrent": true,
     "displayName": "Star Wars",
-    "path": "sw",
     "protocols": [
       "https"
     ],
