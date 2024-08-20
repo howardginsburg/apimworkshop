@@ -13,14 +13,13 @@
 <policies>
 	<inbound>
 		<base />
-		<cache-lookup vary-by-developer="false" vary-by-developer-groups="false" allow-private-response-caching="false" must-revalidate="false" downstream-caching-type="none" />
+		<mock-response status-code="200" content-type="application/json" />
 	</inbound>
 	<backend>
 		<base />
 	</backend>
 	<outbound>
 		<base />
-		<cache-store duration="10" />
 	</outbound>
 	<on-error>
 		<base />
