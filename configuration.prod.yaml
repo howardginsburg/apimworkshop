@@ -1,20 +1,20 @@
 apimServiceName: prod
 namedValues:
 loggers:
-    - name: apiminsights
+    - name: apimdemoinsights
       properties:
         loggerType: applicationInsights
         description: prod application insights
-        resourceId: "/subscriptions/c5797b67-98fc-4dfa-ae5a-2e7779a26e94/resourceGroups/APIMWorkshop/providers/microsoft.insights/components/apiminsights"
+        resourceId: "/subscriptions/4400dccb-df1c-4421-91a3-d2cb708c2ee3/resourceGroups/APIMDemo/providers/microsoft.insights/components/apimdemoappinsights"
         credentials:
-          instrumentationKey: "{{Logger-Credentials--63c9b73246346114e8da8df8}}"
+          instrumentationKey: "{{Logger-Credentials--66c490b9217d2019dc555c77}}"
         isBuffered: true
 diagnostics:
-   - name: apiminsights
+   - name: apimdemoinsights
      properties:
        verbosity: Error
-       loggerId: "/subscriptions/c5797b67-98fc-4dfa-ae5a-2e7779a26e94/resourceGroups/APIMWorkshop/providers/Microsoft.ApiManagement/service/ginsburgapim-prod/loggers/apiminsights"
-backends:
+       loggerId: "/subscriptions/4400dccb-df1c-4421-91a3-d2cb708c2ee3/resourceGroups/APIMDemo/providers/Microsoft.ApiManagement/service/apimdemoginsburgprod/loggers/apimdemoinsights"
+ackends:
 apis:
   - name: echo-api
     properties:

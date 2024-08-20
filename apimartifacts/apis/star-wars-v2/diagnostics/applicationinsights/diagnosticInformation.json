@@ -31,7 +31,7 @@
     },
     "httpCorrelationProtocol": "Legacy",
     "logClientIp": true,
-    "loggerId": "/subscriptions/c5797b67-98fc-4dfa-ae5a-2e7779a26e94/resourceGroups/APIMWorkshop/providers/Microsoft.ApiManagement/service/ginsburgapim/loggers/apiminsights",
+    "loggerId": "/subscriptions/4400dccb-df1c-4421-91a3-d2cb708c2ee3/resourceGroups/APIMDemo/providers/Microsoft.ApiManagement/service/apimdemoginsburg/loggers/apimdemoinsights",
     "sampling": {
       "percentage": 100,
       "samplingType": "Fixed"

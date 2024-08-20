@@ -4,7 +4,7 @@ info:
   description: Arithmetics is just a call away!
   version: '1.0'
 servers:
-  - url: https://ginsburgapim.azure-api.net/calc
+  - url: https://apimdemoginsburg.azure-api.net/calc
 paths:
   /add:
     get:

@@ -12,7 +12,7 @@ info:
     url: https://github.com/markharrison/ColorsAPI/blob/master/LICENSE
   version: '1.0'
 servers:
-  - url: https://ginsburgapim.azure-api.net/color
+  - url: https://apimdemoginsburg.azure-api.net/color
 paths:
   /colors:
     get:

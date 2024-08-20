@@ -4,7 +4,7 @@ info:
   description: implementing star wars api
   version: v2
 servers:
-  - url: https://ginsburgapim.azure-api.net/sw/v2
+  - url: https://apimdemoginsburg.azure-api.net/sw/v2
 paths:
   /people/:
     get:

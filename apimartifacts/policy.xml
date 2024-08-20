@@ -12,7 +12,7 @@
 	<inbound>
 		<cors allow-credentials="true">
 			<allowed-origins>
-				<origin>https://ginsburgapim.developer.azure-api.net</origin>
+				<origin>https://apimdemoginsburg.developer.azure-api.net</origin>
 				<origin>https://colors-web.azurewebsites.net</origin>
 			</allowed-origins>
 			<allowed-methods preflight-result-max-age="300">
