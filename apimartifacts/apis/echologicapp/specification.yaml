@@ -1,0 +1,42 @@
+openapi: 3.0.1
+info:
+  title: EchoLogicApp
+  description: ''
+  version: '1.0'
+servers:
+  - url: https://apimdemoginsburg.azure-api.net
+paths:
+  /EchoWorkflow:
+    post:
+      summary: echo
+      description: echo
+      operationId: echo
+      parameters:
+        - name: x-correlation-id
+          in: header
+          schema:
+            enum:
+              - ''
+            type: ''
+      responses:
+        '200':
+          description: 'null'
+components:
+  schemas:
+    echo:
+      type: object
+      properties:
+        echo:
+          type: string
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]

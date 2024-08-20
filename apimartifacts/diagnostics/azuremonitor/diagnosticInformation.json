@@ -1,7 +1,6 @@
 {
   "properties": {
-    "loggerId": "/subscriptions/4400dccb-df1c-4421-91a3-d2cb708c2ee3/resourceGroups/APIMDemo/providers/Microsoft.ApiManagement/service/apimdemoginsburg/loggers/apimdemoappinsights",
-    "alwaysLog": "allErrors",
+    "loggerId": "/subscriptions/4400dccb-df1c-4421-91a3-d2cb708c2ee3/resourceGroups/APIMDemo/providers/Microsoft.ApiManagement/service/apimdemoginsburg/loggers/azuremonitor",
     "backend": {
       "request": {
         "dataMasking": {
@@ -26,7 +25,6 @@
         }
       }
     },
-    "httpCorrelationProtocol": "Legacy",
     "logClientIp": true,
     "sampling": {
       "percentage": 100,

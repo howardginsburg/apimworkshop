@@ -1,14 +1,15 @@
 {
   "properties": {
-    "path": "echo",
+    "path": "",
     "apiRevision": "1",
     "authenticationSettings": {},
+    "description": "",
     "isCurrent": true,
-    "displayName": "Echo API",
+    "displayName": "EchoLogicApp",
     "protocols": [
       "https"
     ],
-    "serviceUrl": "http://echoapi.cloudapp.net/api",
+    "serviceUrl": "https://logicappsdemoapp.azurewebsites.net:443/api",
     "subscriptionKeyParameterNames": {
       "header": "Ocp-Apim-Subscription-Key",
       "query": "subscription-key"
