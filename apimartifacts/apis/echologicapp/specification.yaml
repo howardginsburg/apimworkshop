@@ -4,7 +4,7 @@ info:
   description: ''
   version: '1.0'
 servers:
-  - url: https://apimdemoginsburg.azure-api.net
+  - url: https://apimdemoginsburg.azure-api.net/echologicapp
 paths:
   /EchoWorkflow:
     post:
