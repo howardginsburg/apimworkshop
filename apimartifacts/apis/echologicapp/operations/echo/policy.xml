@@ -1,0 +1,52 @@
+<!--
+    - Policies are applied in the order they appear.
+    - Position <base/> inside a section to inherit policies from the outer scope.
+    - Comments within policies are not preserved.
+-->
+<!-- Add policies as children to the <inbound>, <outbound>, <backend>, and <on-error> elements -->
+<policies>
+	<!-- Throttle, authorize, validate, cache, or transform the requests -->
+	<inbound>
+		<!--Use consumer correlation id or generate new one-->
+		<set-variable name="correlation-id" value="@(context.Request.Headers.GetValueOrDefault("x-correlation-id", Guid.NewGuid().ToString()))" />
+		<!--Set header for end-to-end correlation-->
+		<set-header name="x-correlation-id" exists-action="override">
+			<value>@((string)context.Variables["correlation-id"])</value>
+		</set-header>
+		<!--Trace the correlation id-->
+		<trace source="Echo Policy" severity="information">
+			<message>@(String.Format("{0} | {1}", context.Api.Name, context.Variables["correlation-id"]))</message>
+			<metadata name="x-correlation-id" value="@((string)context.Variables["correlation-id"])" />
+		</trace>
+		<set-query-parameter name="api-version" exists-action="override">
+			<value>2022-05-01</value>
+		</set-query-parameter>
+		<set-query-parameter name="sp" exists-action="override">
+			<value>%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun</value>
+		</set-query-parameter>
+		<set-query-parameter name="sv" exists-action="override">
+			<value>1.0</value>
+		</set-query-parameter>
+		<set-query-parameter name="sig" exists-action="override">
+			<value>eBAh6zd4d14YWTPHFMIDB-HTd-fPQg_dAXDMv6JU3y4</value>
+		</set-query-parameter>
+		<!--<authentication-managed-identity resource="https://management.azure.com/subscriptions/4400dccb-df1c-4421-91a3-d2cb708c2ee3/resourceGroups/LogicAppsDemo/providers/Microsoft.Web/sites/logicappsdemoapp" output-token-variable-name="token" />
+        <set-header name="Authorization" exists-action="override">
+            <value>Bearer @{context.Variables["token"]}</value>
+        </set-header>-->
+		<rewrite-uri template="/EchoWorkflow/triggers/When_a_HTTP_request_is_received/invoke" copy-unmatched-params="true" />
+		<base />
+	</inbound>
+	<!-- Control if and how the requests are forwarded to services  -->
+	<backend>
+		<base />
+	</backend>
+	<!-- Customize the responses -->
+	<outbound>
+		<base />
+	</outbound>
+	<!-- Handle exceptions and customize error responses  -->
+	<on-error>
+		<base />
+	</on-error>
+</policies>
