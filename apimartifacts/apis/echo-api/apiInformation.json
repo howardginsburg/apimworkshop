@@ -2,8 +2,6 @@
   "properties": {
     "path": "echo",
     "apiRevision": "1",
-    "apiVersion": "V1",
-    "apiVersionSetId": "/subscriptions/4400dccb-df1c-4421-91a3-d2cb708c2ee3/resourceGroups/APIMDemo/providers/Microsoft.ApiManagement/service/apimdemoginsburg/apiVersionSets/66d0dc28a1cfcba5c3737066",
     "authenticationSettings": {},
     "isCurrent": true,
     "displayName": "Echo API",
