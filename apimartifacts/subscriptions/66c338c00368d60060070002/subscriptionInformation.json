@@ -1,8 +1,0 @@
-{
-  "properties": {
-    "scope": "/subscriptions/4400dccb-df1c-4421-91a3-d2cb708c2ee3/resourceGroups/APIMDemo/providers/Microsoft.ApiManagement/service/apimdemoginsburg/products/unlimited",
-    "allowTracing": false,
-    "ownerId": "/subscriptions/4400dccb-df1c-4421-91a3-d2cb708c2ee3/resourceGroups/APIMDemo/providers/Microsoft.ApiManagement/service/apimdemoginsburg/users/1",
-    "state": "active"
-  }
-}
